@@ -39,7 +39,7 @@ public class PlanchaDeCocina : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Hamburguesa") || other.CompareTag("Fry"))
+        if (other.CompareTag("Ingredient") || other.CompareTag("Fry"))
         {
             Hamburguesa hamburguesa = other.GetComponent<Hamburguesa>();
             if (hamburguesa != null)
@@ -57,7 +57,7 @@ public class PlanchaDeCocina : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Hamburguesa") || other.CompareTag("Fry"))
+        if (other.CompareTag("Ingredient") || other.CompareTag("Fry"))
         {
             other.GetComponent<Rigidbody>().isKinematic = true; // Desactivar la física mientras se cocina
         }
@@ -65,7 +65,7 @@ public class PlanchaDeCocina : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Hamburguesa") || other.CompareTag("Fry"))
+        if (other.CompareTag("Ingredient") || other.CompareTag("Fry"))
         {
             other.GetComponent<Rigidbody>().isKinematic = false; // Reactivar la física cuando sale de la plancha
         }

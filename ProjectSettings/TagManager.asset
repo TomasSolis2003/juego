@@ -5,9 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Torreta
   - Hamburguesa
   - Fry
+  - TopBun
+  - BottomBun
+  - Ingredient
+  - coca
+  - Money
+  - pedido
+  - ReceivePoint
+  - Order
   layers:
   - Default
   - TransparentFX
@@ -16,7 +23,7 @@ TagManager:
   - Water
   - UI
   - Fry
-  - 
+  - post_processing
   - 
   - 
   - 

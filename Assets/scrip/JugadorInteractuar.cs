@@ -141,9 +141,9 @@ public class JugadorInteractuar : MonoBehaviour
             {
                 GameObject objeto = hit.collider.gameObject;
 
-                if (objeto.CompareTag("Hamburguesa") || objeto.CompareTag("Fry"))
+                if (objeto.CompareTag("Hamburguesa") || objeto.CompareTag("Fry") || objeto.CompareTag("Ingredient") || objeto.CompareTag("Money") || objeto.CompareTag("Order") || objeto.CompareTag("pedido") || objeto.CompareTag("TopBun"))
                 {
-                    TomarObjeto(objeto);
+                    TomarObjeto(objeto);//TopBun
                 }
             }
         }
