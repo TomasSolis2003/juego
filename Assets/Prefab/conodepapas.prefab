@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4651021291695672683}
   m_Layer: 3
   m_Name: conodepapas
-  m_TagString: Fry
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

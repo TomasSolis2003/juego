@@ -34,7 +34,7 @@ using TMPro;
 public class TutorialMessage : MonoBehaviour
 {
     public TextMeshProUGUI messageText; // Asigna tu componente TextMeshPro aquí
-    public float displayDuration = 3f; // Duración en segundos que el mensaje permanecerá visible
+    public float displayDuration = 5f; // Duración en segundos que el mensaje permanecerá visible
 
     // Array para almacenar los mensajes del tutorial
     public string[] tutorialMessages = new string[5]; // Espacios para 5 mensajes
@@ -47,10 +47,10 @@ public class TutorialMessage : MonoBehaviour
         tutorialMessages[0] = "¡Bienvenido al juego!";
         tutorialMessages[1] = "Usa WASD para moverte.";
         tutorialMessages[2] = "Presiona 'Espacio' para saltar.";
-        tutorialMessages[3] = "Recoge ysuelta ïngredientes o objetos con la E";
+        tutorialMessages[3] = "Recoge y suelta ingredientes o objetos con la E";
         tutorialMessages[4] = "¡Ve al armador y presiona F para armar la Hamburguesa!";
-        tutorialMessages[5] = "¡Diviértete jugando!";
-
+        tutorialMessages[5] = "Si te faltan materiales busca en el almacen!";
+        tutorialMessages[6] = "¡Diviértete jugando!";
         // Muestra el primer mensaje al iniciar
         ShowNextMessage();
     }
@@ -85,3 +85,4 @@ public class TutorialMessage : MonoBehaviour
         ShowNextMessage();
     }
 }
+
